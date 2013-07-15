@@ -4,7 +4,7 @@ body {
 
 p{
     font-family: "Quicksand" sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     font-size: 22px;
 }
@@ -37,22 +37,27 @@ h1{
     border-top: #fff 5px solid;
 }
 
+#usaid-logo{
+	padding-top: 46px;
+}
+
 .portfolioFilter{
     background-color: #468EFA;
-box-shadow: -2px 0 7px #888;
-font-family: "Quicksand" sans-serif;
-color: #fff;
-height: 100%;
-width: 30%;
-max-width: 270px;
-position: fixed;
-top: 0;
-right: 0;
-width: 100%;
-z-index: 1000;
-float: right;
-padding-left: 4px;
-line-height: 30px;
+    box-shadow: -2px 0 7px #888;
+    font-family: "Quicksand" sans-serif;
+    color: #fff;
+    height: 100%;
+    width: 30%;
+    max-width: 270px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    float: right;
+    padding-left: 4px;
+    line-height: 30px;
+    padding-right: 4px;
 }
 
 .portfolioFilter a { 
@@ -60,6 +65,17 @@ line-height: 30px;
     height: 100%;
     color:white;
     text-decoration:none;
+    transition: color .25s linear;
+    -webkit-transition: color .25s linear;
+}
+
+.portfolioFilter a:hover { 
+    padding-left: 20px;
+    height: 100%;
+    color:#1f4a89;
+    text-decoration:none;
+    transition: color .25s linear;
+    -webkit-transition: color .25s linear;
 }
 
 .portfolioFilter a.current { 
@@ -70,8 +86,8 @@ padding-left: 15px;
 }
 
 .portfolioContainer{
-    margin-right: 300px;
-    margin-left: 150px;
+    margin-right: 275px;
+    margin-left: 5%;
     padding-top: 30px;
 }
 
@@ -105,4 +121,48 @@ img {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+}
+
+
+/*Figure*/
+
+.figure p{
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Quicksand' sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+	color: #fff;
+	display: inline-block;
+	background-color: none;
+	margin-bottom: 0px !important;
+}
+
+.figure span{
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Quicksand' sans-serif;
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: white;
+	display: inline-block;
+	position: relative;
+	line-height: 22px;
+	height: 90px;
+}
+
+.figure-text{
+	background-color: #468EFA;
+	border-radius: 2px;
+	box-shadow: 0px 0px 7px #6f6f6f;
+}
+
+.figure-number{
+	background-color: #468EFA;
+	box-shadow: 0px 0px 7px #6f6f6f;
+	border-radius: 2px;
+	height: 90px;
+	width: 90px;
 }
